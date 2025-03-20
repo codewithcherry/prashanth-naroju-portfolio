@@ -1,9 +1,15 @@
+import Navbar from "../../components/Navbar";
 import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="relative mx-auto">
+        <div className="flex justify-center">
+          <Navbar />
+        </div>
+        {children}
+      </body>
     </html>
   );
 }

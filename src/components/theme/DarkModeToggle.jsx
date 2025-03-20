@@ -2,6 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import { Moon, Sun } from 'lucide-react';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"; // Import shadcn Tooltip components
 
 const DarkModeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -27,12 +33,21 @@ const DarkModeToggle = () => {
   };
 
   return (
-    <button
-      onClick={toggleDarkMode}
-      className="px-4 py-2 dark:text-gray-500 rounded flex items-center justify-center hover:cursor-pointer"
-    >
-      {isDarkMode ? <Sun className="w-5 h-5 " /> : <Moon className="w-5 h-5" />}
-    </button>
+    <TooltipProvider>
+      <Tooltip>
+        <TooltipTrigger asChild>
+          <button
+            onClick={toggleDarkMode}
+            className="px-4 py-2 dark:text-gray-500 rounded flex items-center justify-center hover:cursor-pointer"
+          >
+            {isDarkMode ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+          </button>
+        </TooltipTrigger>
+        <TooltipContent>
+          <p>{isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode'}</p>
+        </TooltipContent>
+      </Tooltip>
+    </TooltipProvider>
   );
 };
 
