@@ -10,6 +10,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip"; // Import shadcn Tooltip components
 import Link from 'next/link'; // Import Link from Next.js
+import { usePathname } from 'next/navigation'; // Import usePathname for active link styling
 import { HiHome } from 'react-icons/hi'; // Home icon
 import { BiSolidUser } from 'react-icons/bi'; // About icon
 import { IoBriefcase } from 'react-icons/io5'; // Work icon
@@ -17,9 +18,12 @@ import { BsStack } from 'react-icons/bs'; // Tech Stack icon
 import { IoChatbox } from 'react-icons/io5'; // Contact icon
 
 const Navbar = () => {
+  // Get the current pathname using usePathname
+  const pathname = usePathname();
+
   // Function to check active route (for styling active links)
   const isActive = (path) => {
-    return window.location.pathname === path ? 'text-blue-500 dark:text-blue-400' : 'text-gray-800 dark:text-white';
+    return pathname === path ? 'text-blue-500 dark:text-blue-400' : 'text-gray-800 dark:text-white';
   };
 
   return (
