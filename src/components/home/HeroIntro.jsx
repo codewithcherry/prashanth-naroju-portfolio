@@ -54,7 +54,7 @@ const HeroIntro = () => {
   }, [showParagraph]);
 
   return (
-    <div className="dark:text-gray-100 transition-colors duration-300 flex flex-col items-center justify-center min-h-screen">
+    <div className="dark:text-gray-100 transition-colors duration-300 flex flex-col items-center justify-center min-h-[100vh]">
       {/* Greeting Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }} // Start slightly below and invisible
@@ -110,7 +110,7 @@ const HeroIntro = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
-                  className="text-2xl md:text-3xl font-medium text-green-500 dark:text-blue-500"
+                  className="text-2xl md:text-3xl font-medium text-green-500 dark:text-blue-500 whitespace-nowrap"
                 >
                   {roles[currentRoleIndex]}
                 </motion.div>
