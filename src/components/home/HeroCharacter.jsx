@@ -7,7 +7,7 @@ import Character from './Character';
 
 const HeroCharacter = () => {
   return (
-    <div className=' md:w-md w-full h-[60vh] md:h-[100vh] '>
+    <div className=' md:w-md w-full h-[50vh] md:h-[100vh] '>
       <Canvas
         shadows
         camera={{ position: [0, 0, 5], fov: 50 }} // Adjust camera position

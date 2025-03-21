@@ -9,7 +9,7 @@ const HeroSection = () => {
   return (
     <div
       suppressHydrationWarning
-      className="relative flex flex-col  md:flex-row-reverse items-center justify-center w-4/5 mx-auto gap-8 h-[100vh]"
+      className="relative flex flex-col  md:flex-row-reverse items-center md:justify-center w-4/5 mx-auto gap-8 h-screen"
     >
       <HeroCharacter className="order-1 md:order-2 md:flex-none" />
       <HeroIntro className="order-2 md:order-1 md:flex-1" />
