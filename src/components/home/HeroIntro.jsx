@@ -54,7 +54,7 @@ const HeroIntro = () => {
   }, [showParagraph]);
 
   return (
-    <div className="dark:text-gray-100 transition-colors duration-300 flex flex-col items-center justify-center min-h-[100vh]">
+    <div className="dark:text-gray-100 transition-colors duration-300 flex flex-col items-center justify-center ">
       {/* Greeting Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }} // Start slightly below and invisible
