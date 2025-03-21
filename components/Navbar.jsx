@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:block absolute top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-lg w-[80vw] z-10 transition-all duration-300">
+      <nav  className="hidden md:block absolute top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-lg w-[80vw] z-10 transition-all duration-300">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center py-4">
             
