@@ -13,9 +13,9 @@ const AboutMe = () => {
 
   return (
     <motion.section
-      className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-100 dark:bg-black my-10 z-10 rounded-md shadow-lg border scroll-mt-20 mt:20 md:mt-0"
+      className="py-12 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-black my-10 z-10 rounded-md shadow-lg border scroll-mt-24 mt-24"  id="aboutme"
     >
-      <div className="max-w-5xl mx-auto text-center scroll-mt-20" id="aboutme" >
+      <div className="max-w-5xl mx-auto text-center"  >
         {/* Section Title */}
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
@@ -53,7 +53,7 @@ const AboutMe = () => {
           >
             I started my journey by teaching coding for two years, where I
             helped aspiring developers learn the fundamentals and grow their
-            skills. For the past year, I’ve been working as a frontend
+            skills. For the past year, I’ve been working as a full stack
             developer, focusing on creating clean, responsive, and intuitive
             interfaces that deliver seamless user experiences.
           </motion.p>

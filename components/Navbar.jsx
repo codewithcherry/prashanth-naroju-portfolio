@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden md:block absolute top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-lg w-[80vw] z-10 transition-all duration-300">
+      <nav className="hidden md:block fixed top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-lg w-[80vw]  transition-all duration-300 z-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -110,7 +110,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <div className="md:hidden fixed  top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-xl w-full z-10 transition-all duration-300 p-3 z-50">
+      <div className="md:hidden fixed  top-6 bg-white/70 dark:bg-black/70 backdrop-blur-md shadow-xl rounded-xl w-full  transition-all duration-300 p-3 z-50 mx-2">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl mx-2 font-medium text-gray-800 dark:text-white tracking-wide hover:text-gray-600 dark:hover:text-gray-400 transition duration-300 transform hover:scale-105">
             <h1>Prashanth Naroju</h1>
