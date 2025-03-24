@@ -1,5 +1,4 @@
 import React from "react";
-
 import { IconCloud } from "../magicui/icon-cloud";
 
 const slugs = [
@@ -42,8 +41,13 @@ const SkillCloud = () => {
   );
 
   return (
-    <div className="relative flex size-full items-center justify-center overflow-hidden scale-125 md:scale-150">
-      <IconCloud images={images} />
+    <div className="w-full overflow-hidden">
+      <div className="relative flex size-full items-center justify-center overflow-hidden w-full  scale-100 md:scale-150">
+        {/* Scale down for mobile, reset for larger screens */}
+        
+          <IconCloud images={images} />
+        
+      </div>
     </div>
   );
 };

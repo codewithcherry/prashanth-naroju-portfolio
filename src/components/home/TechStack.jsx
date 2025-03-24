@@ -16,10 +16,10 @@ const TechStack = () => {
   ];
 
   return (
-    <div className="p-4 ">
+    <div className="p-4 max-w-6xl w-[85vw] md-w-full overflow-hidden">
       <h1 className="text-2xl md:text-4xl font-bold text-center mb-8">Tech Stack</h1>
       <h1 className="text-2xl md:text-3xl font-medium text-center">MERN</h1>
-      <div className="flex justify-center gap-6 p-6">
+      <div className="flex justify-center md:gap-6 p-6">
       <TooltipProvider>
         {mernStack.map((tech) => (
           <Tooltip key={tech.name}>
@@ -35,8 +35,8 @@ const TechStack = () => {
         ))}
       </TooltipProvider>
     </div>
-      <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto dark:bg-black gap-8">
-        <Skills className="w-full md:w-1/2" />
+      <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-6xl mx-auto dark:bg-black md:gap-8">
+        <Skills className="w-full md:w-1/2 " />
         <SkillCloud className="w-full md:w-1/2" />
       </div>
     </div>

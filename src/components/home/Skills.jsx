@@ -64,31 +64,30 @@ const Skills = () => {
   };
 
   return (
-    <div className="px-4 py-4 mx-2">
-      <div className=" mx-auto">
-        <h1 className='text-3xl font-medium text-center py-2 text-black dark:text-white'>Skills</h1>
-        <div className="space-y-8">
-          {Object.entries(skills).map(([category, skillsList]) => (
-            <div key={category}>
-              <h2 className="text-xl md:text-2xl font-semibold capitalize mb-4 text-gray-800 dark:text-gray-200">
-                {category}
-              </h2>
-              <div className="flex flex-wrap gap-2 overflow-hidden">
-                {skillsList.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="outline"
-                    className="text-sm font-medium  bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200 whitespace-nowrap"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-            </div>
-          ))}
+    
+    <div className="">
+    <h1 className='text-3xl font-medium text-center py-2 text-black dark:text-white'>Skills</h1>
+    <div className="space-y-8">
+      {Object.entries(skills).map(([category, skillsList]) => (
+        <div key={category}>
+          <h2 className="text-xl md:text-2xl font-semibold capitalize mb-4 text-gray-800 dark:text-gray-200">
+            {category}
+          </h2>
+          <div className="flex flex-wrap gap-2 md:max-w-full max-w-[330px]">
+            {skillsList.map((skill) => (
+              <p
+                key={skill}
+                className="text-sm font-medium border rounded-md border-gray-300 px-1.5 bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+              >
+                {skill}
+              </p>
+            ))}
+          </div>
         </div>
-      </div>
+      ))}
     </div>
+  </div>
+  
   );
 };
 
