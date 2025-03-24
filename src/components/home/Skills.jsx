@@ -73,14 +73,15 @@ const Skills = () => {
           <h2 className="text-xl md:text-2xl font-semibold capitalize mb-4 text-gray-800 dark:text-gray-200">
             {category}
           </h2>
-          <div className="flex flex-wrap gap-2 md:max-w-full max-w-[330px]">
+          <div className="flex flex-wrap gap-2 md:max-w-full">
             {skillsList.map((skill) => (
-              <p
+              <Badge
                 key={skill}
-                className="text-sm font-medium border rounded-md border-gray-300 px-1.5 bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                variant={"outline"}
+                className="text-sm font-medium border  bg-gray-100 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
               >
                 {skill}
-              </p>
+              </Badge>
             ))}
           </div>
         </div>

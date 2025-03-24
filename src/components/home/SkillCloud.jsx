@@ -42,7 +42,7 @@ const SkillCloud = () => {
 
   return (
     <div className="w-full overflow-hidden">
-      <div className="relative flex size-full items-center justify-center overflow-hidden w-full  scale-100 md:scale-150">
+      <div className="relative flex size-full items-center justify-center overflow-hidden w-full  scale-125 md:scale-150">
         {/* Scale down for mobile, reset for larger screens */}
         
           <IconCloud images={images} />
