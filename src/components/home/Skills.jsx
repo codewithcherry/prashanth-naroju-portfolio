@@ -65,7 +65,7 @@ const Skills = () => {
 
   return (
     
-    <div className="">
+    <div className="py-4 px-2">
     <h1 className='text-3xl font-medium text-center py-2 text-black dark:text-white'>Skills</h1>
     <div className="space-y-8">
       {Object.entries(skills).map(([category, skillsList]) => (
