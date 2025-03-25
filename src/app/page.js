@@ -2,6 +2,7 @@
 
 import AboutMe from "@/components/home/AboutMe";
 import HeroSection from "@/components/home/HeroSection";
+import Projects from "@/components/home/Projects";
 import TechStack from "@/components/home/TechStack";
 import Timeline from "@/components/home/Timeline";
 
@@ -23,6 +24,7 @@ export default function Home() {
        <AboutMe />
        <Timeline />
        <TechStack />
+       <Projects />
 
       {/* Bottom Circular Gradient */}
       <div className="absolute bottom-[-50px] left-1/2 -translate-x-1/2 w-[80vw] h-[120px] rounded-full bg-[radial-gradient(circle,_rgba(200,100,150,0.9)_10%,_rgba(50,100,200,0.9)_40%,_transparent_80%)] blur-3xl opacity-70"></div>
