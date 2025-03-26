@@ -74,7 +74,7 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-full max-w-6xl px-4 md:px-8  py-8 mx-auto ">
+    <div className="w-full max-w-6xl px-4 md:px-8  py-8 mx-auto scroll-m-20" id="Projects">
       {/* Title */}
       <motion.h1
         className="text-2xl md:text-4xl font-bold text-center mb-6 md:mb-8"

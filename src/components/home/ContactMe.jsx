@@ -40,7 +40,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div className="my-8">
+    <div className="my-10 scroll-m-24" id='Contact'>
         <motion.div
       initial="hidden"
       whileInView="show"

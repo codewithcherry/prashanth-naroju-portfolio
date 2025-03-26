@@ -42,7 +42,7 @@ const timelineData = [
 
 const Timeline = () => {
   return (
-    <div className=" w-full max-w-6xl mx-auto py-12">
+    <div className=" w-full max-w-6xl mx-auto py-12 scroll-m-20" id="Work">
       <h2 className="text-4xl font-bold text-center mb-12">Work Experience</h2>
       <div className="relative flex flex-col items-start md:items-center">
         {/* Timeline line */}

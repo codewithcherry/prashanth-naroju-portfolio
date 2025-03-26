@@ -37,7 +37,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex items-center">
               <a
-                href="#"
+                href="/"
                 className="text-2xl font-bold text-gray-800 dark:text-white tracking-wide hover:text-gray-600 dark:hover:text-gray-400 transition duration-300 transform hover:scale-105"
               >
                 Prashanth
@@ -46,10 +46,10 @@ const Navbar = () => {
 
             {/* Nav Links */}
             <div className="hidden md:flex space-x-8">
-              {["About", "Work", "Tech Stack", "Contact"].map((item, index) => (
+              {["About", "Work", "Tech Stack","Projects","Contact"].map((item, index) => (
                 <a
                   key={index}
-                  href="#"
+                  href={`#${item}`}
                   className="text-lg font-semibold text-gray-800 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-all duration-300 transform hover:scale-105 hover:-translate-y-1"
                 >
                   {item}
@@ -62,22 +62,22 @@ const Navbar = () => {
               <TooltipProvider>
                 {[
                   {
-                    href: "https://twitter.com",
+                    href: "https://x.com/PrashanthNaroju",
                     icon: <FaXTwitter />,
                     tooltip: "X (Twitter)",
                   },
                   {
-                    href: "https://instagram.com",
+                    href: "https://www.instagram.com/idonutcode/?hl=en",
                     icon: <FaInstagram />,
                     tooltip: "Instagram",
                   },
                   {
-                    href: "https://github.com",
+                    href: "https://github.com/codewithcherry",
                     icon: <FaGithub />,
                     tooltip: "GitHub",
                   },
                   {
-                    href: "https://linkedin.com",
+                    href: "https://www.linkedin.com/in/prashanth-naroju/",
                     icon: <FaLinkedin />,
                     tooltip: "LinkedIn",
                   },

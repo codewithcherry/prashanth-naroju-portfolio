@@ -22,7 +22,7 @@ const TechStack = () => {
   };
 
   return (
-    <div className="p-4 max-w-6xl w-[90vw] md-w-full dark:bg-black overflow-hidden">
+    <div className="p-4 max-w-6xl w-[90vw] md-w-full dark:bg-black overflow-hidden mt-10 scroll-m-28" id="Tech Stack">
       {/* Title */}
       <motion.h1 
         className="text-2xl md:text-4xl font-bold text-center mb-8"
