@@ -4,8 +4,19 @@ import React from "react";
 import HeroIntro from "./HeroIntro";
 import HeroCharacter from "./HeroCharacter";
 import { ArrowDown } from "lucide-react";
+import { Button } from "../ui/button";
 
 const HeroSection = () => {
+  // Function to handle smooth scroll to section
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: "smooth"
+      });
+    }
+  };
   return (
     <div
       suppressHydrationWarning
@@ -16,9 +27,9 @@ const HeroSection = () => {
 
       {/* Centered ArrowDown Icon */}
       <div className="absolute bottom-2 md:bottom-10 left-1/2 transform -translate-x-1/2">
-        <a href="#aboutme" className="block">
-          <ArrowDown className="bg-black text-white w-10 h-10 p-1 rounded-full animate-bounce" />
-        </a>
+        <Button  onClick={() => scrollToSection("About")} className="rounded-full animate-bounce">
+            <ArrowDown  className="bg-black text-white w-10 h-10  " />
+        </Button>  
       </div>
     </div>
   );

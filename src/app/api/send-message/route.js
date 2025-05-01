@@ -37,7 +37,9 @@ export async function POST(request) {
       );
     }
 
-    await sendContactMessage(name, email, message, interest,"prashanth.naro@gmail.com");
+  
+      // Send to all recipients in a single request
+      await sendContactMessage(name, email, message, interest);
 
     return NextResponse.json(
       { success: true, message: 'Message sent successfully!' },

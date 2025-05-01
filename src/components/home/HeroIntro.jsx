@@ -20,6 +20,28 @@ const HeroIntro = () => {
   const [showParagraph, setShowParagraph] = useState(false); // Control when paragraph appears
   const [showButtons,setShowButtons]=useState(false);  //control when buttons appears
 
+  // Function to handle smooth scroll to section
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop - 80,
+        behavior: "smooth"
+      });
+    }
+  };
+
+  const handleDownload = () => {
+    // Replace with your actual PDF file path
+    const pdfUrl = '/PrashanthNarojuResume.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'PrashanthNarojuResume.pdf'; // Name for the downloaded file
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   // Function to cycle through roles
   useEffect(() => {
     if (!showRoles) return; // Don't start the roles animation until greeting is done
@@ -147,7 +169,7 @@ const HeroIntro = () => {
               className="flex items-center justify-center gap-4 mt-2 p-4"
             >
               {/* Contact Me Button */}
-              <Button variant="default" className="flex items-center gap-2">
+              <Button variant="default" className="flex items-center gap-2"  onClick={() => scrollToSection("Contact")}>
                 <Mail size={18} />
                 Hire Me
               </Button>
@@ -155,7 +177,7 @@ const HeroIntro = () => {
               {/* Download CV Button with Tooltip */}
               <Tooltip>
                 <TooltipTrigger asChild>
-                  <Button variant="outline" className="p-2">
+                  <Button variant="outline" className="p-2" onClick={handleDownload}>
                     <Download size={18} />
                   </Button>
                 </TooltipTrigger>
