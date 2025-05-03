@@ -125,10 +125,10 @@ const ContactMe = () => {
               <Mail className="text-blue-500 flex-shrink-0" size={20} />
               <span>prashanth.naro@gmail.com</span>
             </motion.div>
-            <motion.div variants={item} className="flex items-center gap-3">
+            {/* <motion.div variants={item} className="flex items-center gap-3">
               <Phone className="text-blue-500 flex-shrink-0" size={20} />
               <span>+91 814 357 2081</span>
-            </motion.div>
+            </motion.div> */}
             <motion.div variants={item} className="flex items-center gap-3">
               <MapPin className="text-blue-500 flex-shrink-0" size={20} />
               <span>Hyderabad, India</span>
