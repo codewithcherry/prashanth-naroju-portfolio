@@ -33,7 +33,7 @@ const HeroIntro = () => {
 
   const handleDownload = () => {
     // Replace with your actual PDF file path
-    const pdfUrl = '/PrashanthNarojuResume.pdf';
+    const pdfUrl = '/Prashanth_Naroju_FullStack_Resume.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'PrashanthNarojuResume.pdf'; // Name for the downloaded file
