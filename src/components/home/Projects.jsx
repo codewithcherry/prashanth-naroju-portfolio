@@ -12,7 +12,7 @@ const projects = [
     coverImage: "./naro-estate-cover.png",
     githubUrl: "https://github.com/codewithcherry/NaroEstate",
     liveUrl: "https://naro-estate.vercel.app/",
-    youtubeUrl: "https://youtube.com/watch?v=example",
+    // youtubeUrl: "https://youtube.com/watch?v=example",
     techStack: [
       "React",
       "Node.js",
@@ -30,8 +30,8 @@ const projects = [
       "MyShop is a modern e-commerce platform built with the MERN stack and RESTful APIs, offering a seamless online shopping experience. Users can browse, purchase, and manage orders effortlessly with a sleek UI, secure transactions, and a fast, responsive design. The perfect solution for all your shopping needs! 🛒✨",
     coverImage: "./myshop-cover.png",
     githubUrl: "https://github.com/codewithcherry/Shopping-Website",
-    liveUrl: "https://shopping-website-liard-zeta.vercel.app/",
-    youtubeUrl: "https://youtube.com/watch?v=example",
+    // liveUrl: "https://shopping-website-liard-zeta.vercel.app/",
+    // youtubeUrl: "https://youtube.com/watch?v=example",
     techStack: [
       "React",
       "MongoDB",
@@ -48,9 +48,9 @@ const projects = [
     description:
       "My Portfolio is a cutting-edge 3D portfolio website built with Next.js and the MERN stack, featuring stunning 3D animations powered by Three.js. With a sleek UI using shadcn and smooth interactions via Framer Motion, it offers an immersive and dynamic way to showcase your work. Fast, responsive, and visually captivating! 🚀🎨",
     coverImage: "./portofolio-cover.png",
-    githubUrl: "https://github.com/codewithcherry/Shopping-Website",
-    liveUrl: "https://shopping-website-liard-zeta.vercel.app/",
-    youtubeUrl: "https://youtube.com/watch?v=example",
+    githubUrl: "https://github.com/codewithcherry/prashanth-naroju-portfolio",
+    liveUrl: "https://prashanth-naroju-portfolio.vercel.app/",
+    // youtubeUrl: "https://youtube.com/watch?v=example",
     techStack: [
       "React",
       "NextJs",
