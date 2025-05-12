@@ -5,6 +5,26 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    id: "0",
+    title: "MyUniReview",
+    description:
+      "MyUniReview is an online platform built to empower students dreaming of studying in top destinations like the US, UK, Canada, and Australia — by giving them direct, unfiltered access to those who’ve already been there.",
+    coverImage: "./munireview-cover.jpg",
+    githubUrl: "https://github.com/codewithcherry/myunireview",
+    liveUrl: "https://myunireview.vercel.app/",
+    // youtubeUrl: "https://youtube.com/watch?v=example",
+    techStack: [
+      "Next",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Shadcn",
+      "NextJS",
+      "Oauth",
+      "Tailwind CSS",
+    ],
+  },
+  {
     id: "1",
     title: "NaroEstate",
     description:
