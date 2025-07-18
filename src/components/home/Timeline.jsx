@@ -11,7 +11,7 @@ const timelineData = [
     companyLogo: "https://brilliantbrains.digital/wp-content/uploads/2023/11/BB-logo-AI-white-2048x2048.png", // Replace with actual logo URL
     companyName: "Brilliant Brains AI Marketing",
     jobType: "Onsite", 
-    companyWebsite: "https://yourcompanywebsite.com", 
+    companyWebsite: "https://brilliantbrains.digital", 
     role: "Tech Lead & Full Stack Developer",
     jobDescription:
       "As a Tech Lead and Full Stack Developer, I spearheaded the architecture and development of scalable web applications using modern frameworks like Next.js and Node.js. I led a team of engineers through agile sprints, establishing code quality standards, conducting code reviews, and mentoring junior developers. My contributions improved delivery timelines by 35% and enhanced system scalability. I also managed deployment pipelines using AWS and Docker, and implemented CI/CD strategies to streamline releases. Additionally, I collaborated with product teams to define tech roadmaps and deliver high-impact features aligned with business goals.",
