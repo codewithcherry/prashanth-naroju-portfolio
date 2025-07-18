@@ -7,7 +7,29 @@ import JobExperienceCard from "./JobExperienceCard";
 
 const timelineData = [
   {
-    date: "December 2023 - today",
+    date: "July 2025 - Present",
+    companyLogo: "https://brilliantbrains.digital/wp-content/uploads/2023/11/BB-logo-AI-white-2048x2048.png", // Replace with actual logo URL
+    companyName: "Brilliant Brains AI Marketing",
+    jobType: "Onsite", 
+    companyWebsite: "https://yourcompanywebsite.com", 
+    role: "Tech Lead & Full Stack Developer",
+    jobDescription:
+      "As a Tech Lead and Full Stack Developer, I spearheaded the architecture and development of scalable web applications using modern frameworks like Next.js and Node.js. I led a team of engineers through agile sprints, establishing code quality standards, conducting code reviews, and mentoring junior developers. My contributions improved delivery timelines by 35% and enhanced system scalability. I also managed deployment pipelines using AWS and Docker, and implemented CI/CD strategies to streamline releases. Additionally, I collaborated with product teams to define tech roadmaps and deliver high-impact features aligned with business goals.",
+    techSkills: [
+      "NextJS",
+      "TypeScript",
+      "React",
+      "NodeJS",
+      "MongoDB",
+      "PostgreSQL",
+      "AWS",
+      "Docker",
+      "Express",
+      "CI/CD",
+    ],
+  },
+  {
+    date: "December 2023 - June 2025",
     companyLogo:
       "https://upload.wikimedia.org/wikipedia/commons/5/55/BrightChamps_logo.png",
     companyName: "BrightChamp Edtech",
@@ -36,7 +58,14 @@ const timelineData = [
     role: "Senior Code Instructor",
     jobDescription:
       "I mentored over 500+ students in improving their coding and problem-solving skills, teaching languages like JavaScript, Python, and React, and building a strong foundation in programming concepts. Within less than 6 months, I advanced from Junior to Senior Code Instructor by delivering high-quality training, improving student outcomes, and receiving exceptional feedback. I also designed and conducted engaging coding workshops, hands-on projects, and mentorship sessions, helping students achieve their career goals",
-    techSkills: ["HTML", "CSS", "JavaScript", "Python", "Robotics", "3d-modeling"],
+    techSkills: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Python",
+      "Robotics",
+      "3d-modeling",
+    ],
   },
 ];
 
