@@ -50,7 +50,7 @@ const projects = [
       "MyShop is a modern e-commerce platform built with the MERN stack and RESTful APIs, offering a seamless online shopping experience. Users can browse, purchase, and manage orders effortlessly with a sleek UI, secure transactions, and a fast, responsive design. The perfect solution for all your shopping needs! 🛒✨",
     coverImage: "./myshop-cover.png",
     githubUrl: "https://github.com/codewithcherry/Shopping-Website",
-    // liveUrl: "https://shopping-website-liard-zeta.vercel.app/",
+    liveUrl: "https://shopping-website-liard-zeta.vercel.app/",
     // youtubeUrl: "https://youtube.com/watch?v=example",
     techStack: [
       "React",
